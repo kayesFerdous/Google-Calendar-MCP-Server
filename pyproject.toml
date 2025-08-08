@@ -1,0 +1,19 @@
+[project]
+name = "google-calendar-mcp"
+version = "0.1.0"
+description = "An MCP server exposing Google Calendar tools: list events, create events, and delete events."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "google-api-python-client>=2.117.0",
+    "google-auth-httplib2>=0.2.0",
+    "google-auth-oauthlib>=1.2.2",
+    "pydantic>=2.7.0",
+    "mcp[cli]>=1.12.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+dev-dependencies = []
